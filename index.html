@@ -12,35 +12,182 @@
 </head>
 
 <body>
-    <nav></nav>
-    <main class="container-fluid col-lg-8" > <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
-        
-           <div class="col">
-                <h1 class="text-center">Ozzy Osbourne</h1>
-            </div>    
-           <div class="row">
-            
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <main class="container-fluid col-lg-8">
+        <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+
+        <div class="col">
+            <h1 class="text-center mb-3">Ozzy Osbourne</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+
             <div class="col-8 m">
                 <b>John Michael "Ozzy" Osbourne</b> (born 3 December 1948)] is an English singer, songwriter and actor. He rose to prominence during the 1970s as the lead vocalist of the heavy metal band Black Sabbath. He was fired from Black Sabbath in 1979 and went on to have a successful solo career, releasing 11 studio albums, the first seven of which were all awarded multi-platinum certifications in the US. Osbourne has since reunited with Black Sabbath on several occasions, recording the album 13 in 2013. His longevity and success have earned him the informal title of "Godfather of Heavy Metal Osbourne's total album sales from his years in Black Sabbath, combined with his solo work, is over 100 million.[4][5] As a member of Black Sabbath, he was inducted into the Rock and Roll Hall of Fame, and he was inducted into the UK Music Hall of Fame as a solo artist and as a member of the band. Possessing a distinctive singing voice and as a native of Birmingham, Osbourne is known for his strong Brummie accent – he has a star on the Birmingham Walk of Stars in his hometown as well as the Hollywood Walk of Fame. <br><br>At the 2014 MTV Europe Music Awards, he received the Global Icon Award. In 2015 Osbourne received the Ivor Novello Award for Lifetime Achievement from the British Academy of Songwriters, Composers and Authors. In the early 2000s, Osbourne became a reality television star, appearing as himself in the MTV reality show The Osbournes, alongside wife and manager Sharon and two of their three children, Kelly and Jack. He was a co-star along with son Jack in the 2016/2017 worldwide television series Ozzy & Jack's World Detour. The show's second season had also continued into 2017.
-            </div>
-            
-            <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img class="card-img-top" src="images/ozzy_front_page.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                <div class="container p-0">
+                    <h2 class="text-center mt-5">Read more about Ozzy</h2>
+
+                    <div id="buttons">
+                        <div class="btn-group mt-2 w-100" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary w-100">Solo Career</button>
+                            <button type="button" class="btn btn-secondary w-100">Early Life</button>
+                            <button type="button" class="btn btn-secondary w-100">Personal Life</button>
+                            <button type="button" class="btn btn-secondary w-100">Controversy</button>
+                            <button type="button" class="btn btn-secondary w-100">Awards</button>
+                        </div>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block mt-5">Black Sabbath</button>
+                    </div>
                 </div>
+
             </div>
+
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="images/ozzy_front_page.jpg" data-toggle="tooltip" title="Osbourne in 2010" data-placement="top" alt="Osbourne in 2010">
+
+                <div class="list-group-item text-center"><b>Ozzy Osbourne</b></div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#bornCollapse" role="button" aria-expanded="false" aria-controls="bornCollapse">Born</div>
+                <div class="collapse multi-collapse" id="bornCollapse">
+                    <div class="card card-body">
+                        John Michael Osbourne<br> 3 December 1948 (age 69)<br> Aston, Birmingham, England, United Kingdom
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#residenceCollapse" role="button" aria-expanded="false" aria-controls="residenceCollapse">Residence</div>
+                <div class="collapse multi-collapse" id="residenceCollapse">
+                    <div class="card card-body text-center">
+                        Buckinghamshire, England, U.K<br> Los Angeles, California, U.S
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#nationalityCollapse" role="button" aria-expanded="false" aria-controls="nationalityCollapse">Nationality</div>
+                <div class="collapse multi-collapse" id="nationalityCollapse">
+                    <div class="card card-body text-center">
+                        British
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#occupationCollapse" role="button" aria-expanded="false" aria-controls="occupationCollapse">Occupation</div>
+                <div class="collapse multi-collapse" id="occupationCollapse">
+                    <div class="card card-body text-center">
+                        Singer<br> Songwriter
+                        <br> Actor
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#spouseCollapse" role="button" aria-expanded="false" aria-controls="spouseCollapse">Spouse(s)</div>
+                <div class="collapse multi-collapse" id="spouseCollapse">
+                    <div class="card card-body text-center">
+                        Thelma Riley<br> (m.1971; div.1982)<br><br> Sharon Arden<br> (m.1982)
+                        <br>
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#childrenCollapse" role="button" aria-expanded="false" aria-controls="childrenCollapse">Children</div>
+                <div class="collapse multi-collapse" id="childrenCollapse">
+                    <div class="card card-body text-center">
+                        6, including Aimee, Kelly and Jack
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center"><b>Musical Career</b></div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#genresCollapse" role="button" aria-expanded="false" aria-controls="genresCollapse">Genres</div>
+                <div class="collapse multi-collapse" id="genresCollapse">
+                    <div class="card card-body text-center">
+                        Heavy metal
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#instrumentsCollapse" role="button" aria-expanded="false" aria-controls="instrumentsCollapse">Instruments</div>
+                <div class="collapse multi-collapse" id="instrumentsCollapse">
+                    <div class="card card-body text-center">
+                        Vocals, Harmonica
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#yearsCollapse" role="button" aria-expanded="false" aria-controls="yearsCollapse">Years Active</div>
+                <div class="collapse multi-collapse" id="yearsCollapse">
+                    <div class="card card-body text-center">
+                        1967-present
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#labelsCollapse" role="button" aria-expanded="false" aria-controls="labelsCollapse">Labels</div>
+                <div class="collapse multi-collapse" id="labelsCollapse">
+                    <div class="card card-body text-center">
+                        Epic<br> CBS
+                        <br> Jet
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#actsCollapse" role="button" aria-expanded="false" aria-controls="actsCollapse">Associated Acts</div>
+                <div class="collapse multi-collapse" id="actsCollapse">
+                    <div class="card card-body text-center">
+                        Epic<br> CBS
+                        <br> Jet
+                    </div>
+                </div>
+
+                <div class="list-group-item text-center text-white bg-dark" data-toggle="collapse" href="#websiteCollapse" role="button" aria-expanded="false" aria-controls="websiteCollapse">Website</div>
+                <div class="collapse multi-collapse" id="websiteCollapse">
+                    <div class="card card-body text-center">
+                        <a href="http://ozzy.com/">ozzy.com</a>
+                    </div>
+                </div>
+
             </div>
+
+
         </div>
 
-        
-    </main>
 
-    <script src="js/jquery.slim.min.js"></script>
+
+
+    </main>
     <script src="js/popper.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
 </body>
 
 </html>

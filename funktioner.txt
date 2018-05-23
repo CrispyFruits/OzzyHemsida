@@ -1,0 +1,30 @@
+Det som inte används
+
+
+ALERTS
+BADGE
+BREADCRUMB
+
+
+
+
+
+CUSTOM FORMS
+
+FORM INPUT GROUPS
+FORM MODIFIERS
+FORMS
+
+
+JUMBOTRON
+
+MEDIA OBJECTS
+
+
+NAVS
+PAGINATION -ej färdig
+POPOVER
+RESPONSIVE UTILITIES
+SCROLLSPY - lägg till i blacksabbath.html, discography.html
+TABLES - lägg till i solo_career.html
+
